@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+
+    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+}
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 36px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+.page-header {
+    color: #000000;
+    background: #FFFFFF;
+}
+.navigation-link {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+  }
+.main-index {
+    color: #000000;
+    background: #FFFFFF;
+    
+}
+.index-background {
+    background-image: url("../images/index-background.jpg");
+    width:1200px;
+    height:485px;
+    margin:auto;
+    text-align: center;
+    background-size: 100% auto;
+}
+.advantages-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+.advantages-description {
+    text-align: center;
+}
+.topic {
+    text-align: center;
+    text-transform: uppercase;
+}
+.number {
+    text-align: center;
+}
+.description {
+    text-align: center;
+}
+.interest {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.search-hotels-description {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+.subscription {
+    background-image: url("../images/background-subscription.jpg");
+    width:1200px;
+    height:411px;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin:auto;
+}
+.subscription-catalog {
+    background-color: #FFFFFF;
+    width:800px;
+    height:241px;
+}
+.button-search-hotels {
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.subscription-distribution {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.options-hotels {
+    background-image: url("../images/catalog-background.jpg");
+    width:1200;
+    height:408;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.inner-header-title {
+    font-size: 60px;
+    line-height: 78px;
+    text-align: left;
+}
+.breadcrumbs-item {
+    font-size: 16px;
+    line-height: 21px;
+}
+.framework-filter-title {
+    font-size: 20px;
+    line-height: 26px;
+}
+.control-input {
+    font-size: 18px;
+    line-height: 24px;
+}
+.button-blue {
+    font-size: 16px;
+    line-height: 21px;
+}
+.button-brown {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.button {
+    font-size: 18px;
+    line-height: 23px;
+}
+.result-hotels {
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+}
+.cheap {
+    font-size: 18px;
+    line-height: 23px;
+}
+.expensive {
+    font-size: 18px;
+    line-height: 23px;
+}
+.popular {
+    font-size: 18px;
+    line-height: 23px;
+}
+.name-hotel {
+    font-size: 24px;
+    line-height: 31px;
+}
+.value {
+    font-size: 18px;
+    line-height: 23px;
+}
+.rating {
+    font-size: 16px;
+    line-height: 21px;
+}
