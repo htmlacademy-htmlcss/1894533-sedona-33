@@ -2,7 +2,6 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-
     src: url("fonts/pt-sans-regular.woff2") format("woff2");
     font-display: swap;
 }
@@ -30,12 +29,13 @@ body {
     line-height: 26px;
     font-weight: 700;
     text-align: center;
+    color: #000000;
+    background-color: #ffffff;
     text-decoration: none;
   }
 .main-index {
     color: #000000;
-    background: #FFFFFF;
-    
+    background: #FFFFFF;  
 }
 .index-background {
     background-image: url("../images/index-background.jpg");
@@ -124,42 +124,50 @@ body {
 .button-blue {
     font-size: 16px;
     line-height: 21px;
+    color: #FFFFFF;
+    background: #83B3D3;
+    text-align: center;
 }
 .button-brown {
     font-size: 16px;
     line-height: 20px;
+    color: #FFFFFF;
+    background: #756257;
+    text-align: center;
 }
-
 .button {
     font-size: 18px;
     line-height: 23px;
+    color: #000000;
+    background: #FFFFFF;
+    text-align: center;
 }
 .result-hotels {
     font-size: 30px;
     line-height: 39px;
     text-transform: uppercase;
 }
-.cheap {
+.select-control {
     font-size: 18px;
     line-height: 23px;
-}
-.expensive {
-    font-size: 18px;
-    line-height: 23px;
-}
-.popular {
-    font-size: 18px;
-    line-height: 23px;
+    color: #000000;
+    background: #FFFFFF;
 }
 .name-hotel {
     font-size: 24px;
     line-height: 31px;
+    color: #000000;
+    background: #FFFFFF;
 }
 .value {
     font-size: 18px;
     line-height: 23px;
+    color: #000000;
+    background: #FFFFFF;
 }
 .rating {
     font-size: 16px;
     line-height: 21px;
+    color: #333333;
+    background: #F2F2F2;
 }
