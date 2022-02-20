@@ -32,7 +32,7 @@ body {
 .page-header {
     color: #000000;
     background: #FFFFFF;
-    
+    margin-bottom: -5px;
 }
 .navigation { 
     display: grid;
@@ -106,6 +106,7 @@ body {
 }
 .logo-sedona {
     margin-top: 51px;
+    margin-bottom: 10px;
 }
 .index-background {
     background-image: url("../images/index-background.jpg");
@@ -520,14 +521,13 @@ body {
     margin-top: 44px;
 }
 .result {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    gap: 18px;
     list-style: none;
-    margin: 0 58px 30px 72px;
 }
 .hotel-card {
-    margin-right: 58px;
+    padding: 20px;
 }
 .hotel-card:nth-child(3) {
     margin-right: 0;
@@ -551,17 +551,21 @@ body {
     border-bottom: 1px solid #E6E6E6;
     padding: 30px;
     margin-bottom: 30px;
+    margin-left: 72px;
+    margin-right: 72px;
 }
 .pagination-wraper {
     display: flex;
     flex-wrap: nowrap;
 }
 .pagination {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 55px);
+    width: 670px;
+    gap: 8px;
     list-style: none;
-    padding-left: 0;
-    margin-right: 300px;
-    margin-bottom: 73px;
+    padding: 0;
+    margin-left: 72px;
 }
 .pagination-item {
     background: #83B3D3;
@@ -612,7 +616,6 @@ body {
     background-repeat: no-repeat;
     text-align: center;
     margin: 0 auto;
-    
 }
 
 /* Текст */
