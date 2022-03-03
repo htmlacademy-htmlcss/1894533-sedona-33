@@ -63,7 +63,7 @@
           </ul>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="framework-filter-group">
-            <legend class="filter-title">Инфраструктура:</legend>
+            <legend class="filter-title-infrastructure">Инфраструктура:</legend>
               </li>
               <li class="framework-filter-item">
               <label class="control">
@@ -90,19 +90,19 @@
             <ul class="shelter-filter-list">
               <li class="shelter-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="types-of-houses" value="hotel" checked>
+                  <input class="control-input-type" type="radio" name="types-of-houses" value="hotel" checked>
                     Гостиница
                 </label>
               </li>
               <li class="shelter-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="types-of-houses" value="care-products">
+                  <input class="control-input-type" type="radio" name="types-of-houses" value="care-products">
                     Мотель
                 </label>
               </li>
               <li class="shelter-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="types-of-houses" value="apartments">
+                  <input class="control-input-type" type="radio" name="types-of-houses" value="apartments">
                     Апартаменты
                 </label>
               </li>
@@ -111,14 +111,10 @@
             <fieldset class="price-filter-group">
               <legend class="filter-title">Стоимость,&#8381&#58</legend>
                 <p class="min-price">
-                <label for="appointment-name">
-                  Мин.
-                </label>
                   <input class="field" type="text" id="min-price" name="min-price" placeholder="от">
-                <label for="max-price">
-                  Макс.
-                </label>
+                    <label for="appointment-name"></label>
                   <input class="field" type="text" id="max-price" name="max-price" placeholder="до">
+                    <label for="max-price"></label>
                 </p>
               <input type="range" min="0" max="100" step="1" value="80">
             </fieldset>
@@ -136,13 +132,15 @@
                 <option value="expensive">Сначала дорогое</option>
                 <option value="popular">Сначала популярное</option>
               </select>
-                <a href="#" class="button">
-                  <span class="visually-hidden directory-filter">3 столбца</span>
+                <a class="button" href="#">
+                  <img class="three-row" src="images/three-row.svg" width="16" height="14" alt="3 в ряд">
                 </a>
                 <a class="button" href="#">
+                  <img class="show-list" src="images/show-list.svg" alt="Дом">
                   <span class="visually-hidden directory-filter">Показать карточки</span>
                 </a>
                 <a href="#" class="button">
+                  <img class="big-card" src="images/big-card.svg" alt="Дом">
                   <span class="visually-hidden directory-filter">Показать список</span>
                 </a>
             </div>
@@ -171,7 +169,7 @@
                 <img class="product-card-image" src="images/hotel-villas.jpg" width="300" height="206" alt="Villas at Poco Diablo">
                 <h3 class="name-hotel">Villas at Poco Diablo</h3>
                 <p class="type-shelter">Гостиница</p>
-                <p class="value">От 4000 &#8381</p>
+                <p class="value">От 2000 &#8381</p>
                 <a class="button-brown" href="#">Подробнее</a>
                 <a class="button-blue" href="#">В избранное</a>
                 <img class="2-star hotel" src="" alt="2">
@@ -181,7 +179,7 @@
                 <img class="product-card-image" src="images/hotel-greentree.jpg" width="300" height="206" alt="GreenTree Inn">
                 <h3 class="name-hotel">GreenTree Inn</h3>
                 <p class="type-shelter">Гостиница</p>
-                <p class="value">От 4000 &#8381</p>
+                <p class="value">От 3000 &#8381</p>
                 <a class="button-brown" href="#">Подробнее</a>
                 <a class="button-blue" href="#">В избранное</a>
                 <img class="2-star hotel" src="" alt="2">
@@ -193,8 +191,8 @@
             </div>
             <div class="pagination-wraper">
             <ul class="pagination">
-              <li class="pagination-item-black">
-                <a class="pagination-link pagination-current">1</a>
+              <li class="pagination-item">
+                <a class="pagination-link">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">2</a>
@@ -225,7 +223,7 @@
         <h3 class="subscription-header black">Подпишитесь на рассылку</h3>
           <p class="subscription-description black">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
             <form class="subscription-email" action="https://echo.htmlacademy.ru/" method="get">
-              <input type="text" id="e-mail" name="e-mail" placeholder="Ваш e-mail">
+              <input class="button-email" type="text" id="e-mail" name="e-mail" placeholder="Ваш e-mail">
               <button class="subscription-button" type="submit">Подписаться</button>
               <label for="e-mail"></label>
             </form>
@@ -257,7 +255,7 @@
           <a class="footer-contacts-address-phone" href="tel:+78128211212">+7 (812) 812-12-12</a>
           <p class="about-text">
             <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-              <img class="logo" src="images/logo-html.svg" width="115" height="34" alt=".html academy">
+              <img class="logo-html" src="images/logo-html.svg" width="115" height="34" alt=".html academy">
             </a>
           </p>
       </section>
