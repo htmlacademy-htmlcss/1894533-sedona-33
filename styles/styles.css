@@ -43,6 +43,7 @@ body {
     display: flex;
     margin: 0 70px;
 }
+
 .navigation-logo {
     display: flex;
     position: relative;
@@ -74,11 +75,23 @@ body {
     padding-top: 16px;
     margin-right: 22px;
 }
-.navigation-sign:hover {
-    color: #756257;
+.search {
+    fill:#000000;
 }
-.navigation-sign:active {
-    color:#e5e5e5;
+.search:hover {
+    fill:#756257;
+}
+.search:active {
+    fill:#e5e5e5;
+}
+.follow {
+    fill:#000000;
+}
+.follow:hover {
+    fill:#756257;
+}
+.follow:active {
+    fill:#e5e5e5;
 }
 .navigation-user {
     max-width: 430px;
@@ -183,7 +196,7 @@ body {
 }
 .advantages-title {
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 33px;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
@@ -194,7 +207,7 @@ body {
     font-size: 22px;
     line-height: 32px;
     text-align: center;
-    margin-bottom: 61px;;
+    margin-bottom: 60px;;
 }
 
 /* Причины */
@@ -342,17 +355,17 @@ body {
     letter-spacing: inherit;
 }
 .search-hotels-description {
+    margin:0;
     font-size: 22px;
     line-height: 26px;
-    margin: 0 auto;
     margin-bottom: 56px;
     text-align: center;
 }
 .button-search-hotels {
     display: inline-block;
     padding-top: 14px;
-    width: 575px;
-    height: 45px;
+    width: 576px;
+    height: 46px;
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
@@ -434,12 +447,11 @@ body {
 .button-email {
     display: inline-block;
     position: relative;
-    top: 1px;
+    top: 3px;
     left: 3px;
     background-color: #F2F2F2;
-    padding: 10px 22px;
-    width: 556px;
-    height: 40px; 
+    width: 596px;
+    height: 58px; 
     border: none;
     border-radius: 10px 0 0 10px;
     border-color:#F2F2F2
@@ -449,13 +461,20 @@ body {
 }
 .button-email:focus {
     box-shadow: inset 0 0 0 3px #83B3D3;
-    
+}
+.button-email::placeholder {
+    font-size: 18px;
+    line-height: 26px;
+    color:#000000;
+    align-items: center;
+    padding-left: 20px;
 }
 .subscription-button {
     position: relative;
+    padding: 0;
     top: 4px;
     right: 3px;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 26px;
     width: 200px;
     height: 60px;
@@ -476,6 +495,10 @@ body {
 .subscription-button:active {
     color:#e5e5e5;
     background-color: #68a2c2;
+}
+.subscription-button::placeholder {
+    font-size: 20px;
+    line-height: 26px;
 }
 .footer-social {
     width: 1200px;
@@ -543,10 +566,10 @@ body {
     margin-right: 29px;
 }
 .button-social {
-    
+    fill:#83B3D3;
 }
 .button-social:hover {
-    color: #68a2c2;
+    fill: #68a2c2;
 }
 .button-social:focus {
     box-shadow: inset 0 0 0 3px #83B3D3;
@@ -582,18 +605,17 @@ body {
 .logo-html {
     
 }
-.htmlacademy-link:hover {
-    color:#756257;
+.logo-html:hover {
+    fill:#756257;
 }
-.htmlacademy-link:focus {
-    color:#756257;
+.logo-html:focus {
+    fill:#756257;
     box-shadow: inset 0 0 0 3px #83B3D3;
 }
-.htmlacademy-link:active {
-    color:#e5e5e5;
+.logo-html:active {
+    fill:#e5e5e5;
     box-shadow: none;
 }
-
 
 /* Каталог фильтр*/
 
