@@ -811,13 +811,25 @@ body {
     font-size: 17px;
     line-height: 23px;
     height: 23px;
-    width: 160px;
+    width: 100px;
     color: #FFFFFF;
     background: none;
     border: none;
 }
-
-
+.button-reset:hover {
+    color: #f2f2f2;
+}
+.button-reset:focus {
+    color: #FFFFFF;
+    box-shadow: 0 0 0 3px #83B3D3;
+    border-radius: 2px;
+    outline: none;
+}
+.button-reset:active {
+    color: #e5e5e5;
+    box-shadow: none;
+    outline: none;
+}
 /* Каталог результаты */
 
 .result {
