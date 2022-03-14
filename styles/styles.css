@@ -452,6 +452,7 @@ body {
 .button-email {
     display: inline-block;
     position: relative;
+    font-family: "PT Sans";
     top: 3px;
     left: 3px;
     background-color: #F2F2F2;
@@ -459,7 +460,9 @@ body {
     height: 58px; 
     border: none;
     border-radius: 10px 0 0 10px;
-    border-color:#F2F2F2
+    border-color:#F2F2F2;
+    padding-top: 3px;
+    padding-left: 2px;
 }
 .button-email:hover {
     background-color: #e5e5e5;
@@ -477,10 +480,11 @@ body {
 }
 .subscription-button {
     position: relative;
+    font-family: "PT Sans";
     padding: 0;
     top: 4px;
     right: 3px;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 26px;
     width: 200px;
     height: 60px;
@@ -660,7 +664,7 @@ body {
     flex-direction: column;
     list-style: none;
     border: none;
-    margin-right: 10px;
+    margin-right: 1px;
     padding: 0;
     width: 226px;
 }
@@ -681,8 +685,9 @@ body {
     position: relative;
     font-size: 18px;
     line-height: 24px;
-    padding-left: 56px;
     margin-bottom: 12px;
+    padding-left: 108px;
+    text-align: start;
     color: white;
 }
 .control-input {
@@ -704,8 +709,16 @@ body {
     background-color: #ffffff;
     border-radius: 4px;
 }
-.control .control-mark:hover {
-    border-color: #814b18;
+.control-input-type ~ .control-mark {
+    position: absolute;
+    left: 60px;
+}
+.control:hover .control-mark{
+    background-color: #e5e5e5;
+}
+.control:focus .control-mark{
+    background-color: #e5e5e5;
+    outline: 4px solid #68a2c2;
 }
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
@@ -720,7 +733,6 @@ body {
     top: 11px;
     left: 3px;
 }
-  
 .control-input[type="checkbox"]:checked + .control-mark::after {
     transform: rotate(-45deg);
     width: 10px;
@@ -762,36 +774,54 @@ body {
 .shelter-filter-item {
     list-style: none;
 }
-.control-type {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 18px;
-    line-height: 24px;
-    padding-left: 54px;
-    margin-bottom: 12px;
-    color: white;
+.shelter-filter-item .control {
+    padding-left: 99px;
 }
 .control-input-type {
     width: 20px;
     height: 20px;
     margin-right: 19px;
 }
+.control-input-type[type="radio"] + .control-mark {
+    border-radius: 50%;
+
+}
+.control-input-type[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #3F5E72;
+    border-radius: 50%;
+    content: "";
+}
+.control-input-type[type="radio"]:hover + .control-mark{
+    background-color: #ffffff;
+}
+.control-input-type[type="radio"]:focus + .control-mark{
+    outline: 2px solid #68a2c2;
+}
+.control-input-type[type="radio"]:active + .control-mark{
+    outline:none;
+}
 .price-filter-group {
     width: 421px;
     padding: 0;
     border: none;
+    margin-right: 37px;
 }
 .filter-title-price {
     font-size: 20px;
     line-height: 26px;
     padding: 0;
-    padding-left: 97px;
+    padding-left: 91px;
     margin-bottom: 35px;
     color: white;
     text-align: left;
 }
 .price {
-    padding-left: 95px;
+    padding-left: 54px;
     margin: 0;
 }
 .field {
@@ -799,35 +829,47 @@ body {
     height: 48px;
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 4px 0 0 4px;
     background-color: transparent;
     margin-bottom: 6px;
-    
+}
+.field:hover {
+    border: 2px solid #e5e5e5;
+}
+.field:focus {
+    border: 2px solid #FFFFFF;
+    outline: 2px solid #68a2c2;
+    box-shadow: inset 0 0 0 2px #83B3D3;
+}
+.field:required {
+    background-color: #756257;
+}
+.field:last-child {
+    background: ;
 }
 [value] {
     font-size: 18px;
     line-height: 24px;
     text-align: start;
     color: #ffffff;
-    padding-left: 19px;
-}
-.price > .field {
-    
+    padding-left: 17px;
 }
 .field ~ .field {
     position: relative;
-    right: 9px;
+    right: 8px;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
 }
 .range  {
     display: inline-block;
-    padding-left: 90px;
+    padding-left: 50px;
 }
 .range-scale {
     position: relative;
     height: 4px;
     background-color: #333333;
     border-radius: 2px;
-    width: 287px;
+    width: 278px;
 }
 .range-bar {
     position: absolute;
@@ -845,12 +887,12 @@ body {
 }
 .toggle-min {
     top: -8px;
-    left: -10px;
+    left: -7px;
 }
   
 .toggle-max {
     top: -8px;
-    right: -10px;
+    right: -2px;
 }
 .hostels-catalog {
     font-size: 16px;
@@ -869,6 +911,8 @@ body {
     max-height: 766px;
 }
 .apply-reset {
+    display: flex;
+    flex-direction: column;
     padding-top: 61px;
 }
 .button-apply {
@@ -883,7 +927,7 @@ body {
     border: none;
     padding:0;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 19px;
 }
 .button-apply:hover {
     background: #68a2ca;
@@ -905,6 +949,7 @@ body {
     color: #FFFFFF;
     background: none;
     border: none;
+    padding-left: 43px;
 }
 .button-reset:hover {
     color: #f2f2f2;
@@ -949,11 +994,12 @@ body {
     background: #FFFFFF;
     width: 288px;
     height: 48px;
-    padding-left: 15px;
+    padding-left: 19px;
     letter-spacing: -1px;
-    margin-right: 82px;
+    margin-right: 81px;
     box-shadow: inset 0 0 0 3px #e5e5e5;
     border: none;
+    appearance: none;
 }
 .select-control:hover {
     box-shadow: inset 0 0 0 3px #83B3D3;
@@ -965,6 +1011,12 @@ body {
 .select-control:active {
     color: #e5e5e5;
     box-shadow: inset 0 0 0 3px #e5e5e5;
+}
+.cheap {
+    color: #000000;
+}
+.expensive {
+    color: #000000;
 }
 .card-grid-toggle {
     display: inline-block;
@@ -987,7 +1039,6 @@ body {
 .card-grid-toggle:active {
     box-shadow: inset 0 0 0 3px #000000;
 }
-
 .directory-filter {
     margin-top: 44px;
 }
@@ -1205,14 +1256,18 @@ body {
     line-height: 23px;
     color:#000000;
     margin: 0;
-    margin-right: 30px;
+    margin-right: 28px;
     padding-top: 15px;
     width: 200px;
 }
 .select-control-amount {
-    width: 160px;
-    height: 48px;
+    font-size: 18px;
+    width: 158px;
+    height: 46px;
+    padding: 10px 10px 0 14px;
+    appearance: none;
 }
+
 /* Текст */
 
 .white {
