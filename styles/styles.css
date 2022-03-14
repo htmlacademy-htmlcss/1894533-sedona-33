@@ -667,7 +667,7 @@ body {
 .filter-title-infrastructure {
     font-size: 20px;
     line-height: 26px;
-    padding-left: 69px;
+    padding-left: 65px;
     margin-bottom: 29px;
     color: white;
 }
@@ -677,10 +677,11 @@ body {
     list-style: none;
 }
 .control {
-    display: flex;
+    display: block;
+    position: relative;
     font-size: 18px;
     line-height: 24px;
-    padding-left: 70px;
+    padding-left: 56px;
     margin-bottom: 12px;
     color: white;
 }
@@ -692,6 +693,49 @@ body {
     color: black;
     background: #FFFFFF;
     margin: 2px 18px 0 0;
+}
+.control-mark {
+    position: absolute;
+    top: 2px;
+    left: 70px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.control .control-mark:hover {
+    border-color: #814b18;
+}
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+    position: absolute;
+    height: 2px;
+    background-color: #333333;
+    content: "";
+}
+.control-input[type="checkbox"]:checked + .control-mark::before {
+    transform: rotate(45deg);
+    width: 7px;
+    top: 11px;
+    left: 3px;
+}
+  
+.control-input[type="checkbox"]:checked + .control-mark::after {
+    transform: rotate(-45deg);
+    width: 10px;
+    top: 9px;
+    left: 7px;
+}
+.control-input:disabled + .control-mark {
+    border-color: #242424;
+}
+.check {
+    padding-bottom: 3px;
+}
+  
+.control-input:disabled + .control-mark {
+    border-color: #242424;
 }
 .shelter-filter-group {
     display: flex;
@@ -757,10 +801,56 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     background-color: transparent;
+    margin-bottom: 6px;
+    
 }
-#max-price {
+[value] {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: start;
+    color: #ffffff;
+    padding-left: 19px;
+}
+.price > .field {
+    
+}
+.field ~ .field {
     position: relative;
     right: 9px;
+}
+.range  {
+    display: inline-block;
+    padding-left: 90px;
+}
+.range-scale {
+    position: relative;
+    height: 4px;
+    background-color: #333333;
+    border-radius: 2px;
+    width: 287px;
+}
+.range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: #ffffff;
+}
+.range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.toggle-min {
+    top: -8px;
+    left: -10px;
+}
+  
+.toggle-max {
+    top: -8px;
+    right: -10px;
 }
 .hostels-catalog {
     font-size: 16px;

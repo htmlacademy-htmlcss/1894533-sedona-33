@@ -68,9 +68,10 @@
             <legend class="filter-title-infrastructure">Инфраструктура:</legend>
               <ul class="framework-filter-list">
                 <li class="framework-filter-item">
-                  <label for="swimming-pool" class="control">
-                    <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                      Бассейн
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="framework-filter-item">
@@ -113,12 +114,25 @@
             <fieldset class="price-filter-group">
               <legend class="filter-title-price">Стоимость, &#8381&#58</legend>
                 <p class="price">
-                  <input class="field" type="text" id="min-price" name="min-price" placeholder="от">
+                  <input class="field" type="text" id="min-price" name="min-price" value="0">
                     <label for="appointment-name"></label>
-                  <input class="field" type="text" id="max-price" name="max-price" placeholder="до">
+                  <input class="field" type="text" id="max-price" name="max-price" value="9000">
                     <label for="max-price"></label>
                 </p>
-              <input type="range" min="0" max="100" step="1" value="80">
+              
+
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="width: 227px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <div class="apply-reset">
               <button class="button-apply" type="submit">Применить</button>
