@@ -16,7 +16,6 @@
 html {
     height: 100%;
 }
-
 body {
     display: flex;
     flex-direction: column;
@@ -36,33 +35,27 @@ body {
     background: #FFFFFF;
     margin-bottom: -5px;
 }
-
 .navigation { 
     display: grid;
     width: 1200px;
     margin: 0 auto;
 }
-
 .header-navigation {
     display: flex;
     margin: 0 70px;
 }
-
 .navigation-logo {
     display: flex;
     position: relative;
     z-index: 1;
     margin-right: 47px;
 }
-
 .navigation-logo + .navigation-list {
     margin-right: 276px;
 }
-
 .logo {
     padding: 0;
 }
-
 .navigation-list {
     display: flex;
     flex-wrap: wrap; 
@@ -72,39 +65,31 @@ body {
     margin: 0;
     list-style: none;
 }
-
 .navigation-list+.navigation-user {
     width: 264px;
     margin: 0;
 }
-
 .navigation-sign {
     min-width: 18px;
     min-height: 18px;
     padding-top: 16px;
     margin-right: 22px;
 }
-
 .search {
     fill: #000000;
 }
-
 .search:hover {
     fill: #756257;
 }
-
 .search:focus {
     outline: none;
 }
-
 .search:active {
     fill: #e5e5e5;
 }
-
 .follow {
     fill: #000000;
 }
-
 .follow:hover {
     fill: #756257;
 }
@@ -478,7 +463,7 @@ body {
     background-color: #e5e5e5;
 }
 .button-email:focus {
-    box-shadow: inset 0 0 0 3px #83B3D3;
+    box-shadow: 0 0 0 3px #83B3D3;
     outline: none;
 }
 .button-email::placeholder {
@@ -856,9 +841,6 @@ body {
 .field:required {
     background-color: #756257;
 }
-.field:last-child {
-    background: ;
-}
 [value] {
     font-size: 18px;
     line-height: 24px;
@@ -1070,9 +1052,6 @@ body {
 }
 .product-card-image:hover {
     opacity: .5;
-}
-.product-card-image:focus {
-    
 }
 .product-card-image:active {
     opacity: .3;
@@ -1317,4 +1296,68 @@ body {
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
+
+/* Модальное окно */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modal {
+    position: relative;
+    margin: auto;
+    margin-top: 395px;
+    padding: 60px 70px 70px 68px ;
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+.modal-auth {
+    width: 578px;
+    height: 438px;
+}
+.modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 54px;
+    right: 70px;
+    width: 53px;
+    height: 53px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    border: none;
+}
+.modal-close-button:hover {
+    background-color: #E6E6E6;
+}
+.modal-close-button:focus {
+    background-color: #E6E6E6;
+    border-color: #83B3D3;
+}
+.modal-close-button:active {
+    fill: #f2f2f2;
+}
+.modal-title {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 64px;
+    text-transform: uppercase;
+}
+.search-modal {
+    height: 60px;
+    width: 575px;
+}
+.modal-profile {
+    font-size: 18px;
+    line-height: 40px;
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+    

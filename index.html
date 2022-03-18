@@ -155,5 +155,41 @@
           </p>
       </section>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <svg width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/></svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post"></form>
+          <p class="modal-profile">
+            Дата заезда:
+            <label class="visually-hidden" for="auth-login"></label>
+            <input class="modal-form-field field" type="data" id="modal-data-check-in" name="data-check-in" placeholder="1 января 2000">
+          </p>
+          <p class="modal-profile">
+            Дата выезда:
+            <label class="visually-hidden" for="auth-login"></label>
+            <input class="modal-form-field field" type="data" id="modal-data-check-in" name="data-check-out" placeholder="1 января 2000">
+          </p>
+          <p class="modal-profile">
+            Взрослые:
+            <label class="visually-hidden" for="auth-login"></label>
+            <input class="modal-form-field field" type="number" id="number-of-adult" name="number-of-adult" placeholder="">
+          </p>
+          <p class="modal-profile">
+            Дата выезда:
+            <label class="visually-hidden" for="auth-login"></label>
+            <input class="modal-form-field field" type="number" id="number-of-child" name="number-of-child" placeholder="">
+          </p>
+          <button class="search-modal" type="submit">Найти</button>
+
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
