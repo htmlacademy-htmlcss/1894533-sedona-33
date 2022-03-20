@@ -164,29 +164,33 @@
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в седоне</h2>
-          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post"></form>
-          <p class="modal-profile">
-            Дата заезда:
-            <label class="visually-hidden" for="auth-login"></label>
-            <input class="modal-form-field field" type="data" id="modal-data-check-in" name="data-check-in" placeholder="1 января 2000">
-          </p>
-          <p class="modal-profile">
-            Дата выезда:
-            <label class="visually-hidden" for="auth-login"></label>
-            <input class="modal-form-field field" type="data" id="modal-data-check-in" name="data-check-out" placeholder="1 января 2000">
-          </p>
-          <p class="modal-profile">
-            Взрослые:
-            <label class="visually-hidden" for="auth-login"></label>
-            <input class="modal-form-field field" type="number" id="number-of-adult" name="number-of-adult" placeholder="">
-          </p>
-          <p class="modal-profile">
-            Дата выезда:
-            <label class="visually-hidden" for="auth-login"></label>
-            <input class="modal-form-field field" type="number" id="number-of-child" name="number-of-child" placeholder="">
-          </p>
-          <button class="search-modal" type="submit">Найти</button>
-
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-data">
+              <p class="data-in modal-profile">Дата заезда:</p>
+              <label class="visually-hidden" for="auth-login"></label>
+              <input class="modal-form-data field" type="data" id="modal-data-check-in" name="data-check-in">
+            </div>
+            <div class="modal-data">
+              <p class="modal-profile data-out">Дата выезда:</p>
+              <label class="visually-hidden" for="auth-login"></label>
+              <input class="modal-form-data field" type="data" id="modal-data-check-in" name="data-check-out">
+            </div>
+            <div class="soul">
+              <p class="adults modal-profile">Взрослые:</p>
+              <label class="visually-hidden" for="auth-login"></label>
+              <input class="modal-form-soul field" type="number" id="number-of-adult" name="number-of-adult">
+              <p class="childs modal-profile">Дети:</p>
+                <span class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5"/><g clip-path="url(#a)" fill="#fff"><path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z"/></g><defs><clipPath id="a">
+                    <path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z"/></clipPath></defs></svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+              <label class="visually-hidden" for="auth-login"></label>
+              <input class="modal-form-soul field" type="number" id="number-of-child" name="number-of-child">
+            </div>
+            <button class="search-modal" type="submit">Найти</button>
           </form>
         </section>
       </div>
