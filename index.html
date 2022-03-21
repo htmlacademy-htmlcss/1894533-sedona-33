@@ -170,24 +170,22 @@
               <input class="modal-form-data field" type="data" id="modal-data-check-in" name="data-check-in" value="27 апреля 2020">
             </div>
             <div class="modal-data">
-              <p class="modal-profile data-out">Дата выезда:</p>
-              <label class="visually-hidden" for="auth-login"></label>
+              <label class="modal-form-label" for="auth-login">Дата выезда:</label>
               <input class="modal-form-data field" type="data" id="modal-data-check-in" name="data-check-out" value="1 сентября 2021">
             </div>
             <div class="soul">
-              <p class="adults modal-profile">Взрослые:</p>
-              <label class="visually-hidden" for="auth-login"></label>
+              <label class="modal-form-soul adults" for="auth-login">Взрослые:</label>
               <input class="modal-form-soul field" type="number" id="number-of-adult" name="number-of-adult">
-              <p class="childs modal-profile">Дети:</p>
                 <span class="tooltip">
+                
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+              <label class="modal-form-child childs" for="auth-login">Дети:</label>
                 <button class="tooltip-toggle" type="button">
                   <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5"/><g clip-path="url(#a)" fill="#fff"><path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z"/></g><defs><clipPath id="a">
                     <path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z"/></clipPath></defs></svg>
                 </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-              </span>
-              <label class="visually-hidden" for="auth-login"></label>
-              <input class="modal-form-soul field" type="number" id="number-of-child" name="number-of-child">
+              <input class="modal-form-child field" type="number" id="number-of-child" name="number-of-child">
             </div>
             <button class="search-modal" type="submit">Найти</button>
           </form>

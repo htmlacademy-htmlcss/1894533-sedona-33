@@ -1383,18 +1383,6 @@ body {
     margin: 0;
     width: 155px;
 }
-.data-in {
-    width: 155px;
-    margin: 0;
-    padding-top: 8px;
-    padding-left: 2px;
-}
-.data-out {
-    margin:0;
-    width: 155px;
-    padding-top: 8px;
-    padding-left: 2px;
-}
 .modal-form-data {
     position: relative;
     font-family: 'PT Sans';
@@ -1405,13 +1393,13 @@ body {
     height: 55px;
     margin: 0;
     color: #000000;
-    padding-left: 19px;
+    padding-left: 20px;
 }
 .modal-data::after {
     content: "";
     position: absolute;
     top: 20px;
-    right: 2px;
+    right: 12px;
     background-image: url(../images/calendar.svg);
     background-repeat: no-repeat;
     width: 20px;
@@ -1419,16 +1407,36 @@ body {
     color: #000000;
     z-index: 99999;
 }
+.modal-form-label {
+    width: 155px;
+    margin: 0;
+    padding-top: 8px;
+    padding-left: 2px;
+}
 .soul {
     display: flex;
     margin: 0;
 }
+.modal-form-soul {
+    font-family: 'PT Sans';
+    width: 155px;
+    font-size: 18px;
+    line-height: 40px;
+    padding-top: 10px;
+    padding-left: 1px;
+}
 .adults {
+    font-size: 18px;
+    line-height: 40px;
     padding: 9px 0 0 3px;
     width: 152px;
     height: 55px;
+    font-weight: bold;
 }
 .childs {
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
     margin:0;
     width: 98px;
     height: 55px;
