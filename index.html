@@ -178,15 +178,27 @@
             <div class="wrapper-soul">
               <div class="wrapper-adult">
                 <label class="modal-form-adult adults" for="auth-login">Взрослые:</label>
-                <input class="modal-form-soul field-number" type="number" id="number-of-adult" name="number-of-adult">
+                <input class="modal-form-soul field-number" type="number" id="number-of-adult" name="number-of-adult" value="2">
                 <button class="less-adult">
-                  <svg width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="less" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
                   <path opacity=".3" d="M0 0v1h13V0H0Z"/></svg>
+                </button>
+                <button class="plus-adult">
+                  <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>
                 </button>
               </div>
               <span class="wrapper-child">
                 <label class="modal-form-child childs" for="auth-login">Дети:</label>
-                <input class="modal-form-soul field-number" type="number" id="number-of-child" name="number-of-child">
+                <input class="modal-form-soul field-number" type="number" id="number-of-child" name="number-of-child" value="1">
+                <button class="less-child">
+                  <svg class="less" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity=".3" d="M0 0v1h13V0H0Z"/></svg>
+                </button>
+                <button class="plus-child">
+                  <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="#000"/></svg>
+                </button>
               </span>
               <span class="tooltip">
                 <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
